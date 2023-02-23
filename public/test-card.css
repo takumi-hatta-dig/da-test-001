@@ -1,0 +1,60 @@
+/*
+ * タイムラインやフッターのカードと同じような形で実装しています。
+ * app.cssはgov-cms-frontendのsassを出力しています。
+ */
+
+.test-card-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.test-card {
+  background-color: #f9f9f9;
+  border: 1px solid #d8d8db;
+  border-radius: 8px;
+}
+
+.test-card a,
+.test-card a:visited {
+  text-decoration: none;
+  color: #222;
+  transition: background-color .3s cubic-bezier(.4, .4, 0, 1);
+}
+
+.test-card a:hover {
+  background-color: #efefef;
+  transition: background-color .3s cubic-bezier(.4, .4, 0, 1);
+}
+
+.test-card__box {
+  display: block;
+}
+
+.card__box:focus {
+  outline: 2px solid #ffd300;
+}
+
+.test-card__body {
+  padding: 16px;
+}
+
+.test-card__thumb {
+  position: relative;
+  height: 200px;
+}
+
+.test-card__thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.test-card__title {
+  margin: 0;
+}
+
+.test-card__text {}
