@@ -10,6 +10,7 @@
 }
 
 .test-card {
+  height: 370px;
   background-color: #f9f9f9;
   border: 1px solid #d8d8db;
   border-radius: 8px;
@@ -29,14 +30,11 @@
 
 .test-card__box {
   display: block;
+  height: 100%;
 }
 
 .card__box:focus {
   outline: 2px solid #ffd300;
-}
-
-.test-card__body {
-  padding: 16px;
 }
 
 .test-card__thumb {
@@ -53,8 +51,14 @@
   object-fit: cover;
 }
 
+.test-card__body {
+  padding: 16px;
+}
+
 .test-card__title {
   margin: 0;
 }
 
-.test-card__text {}
+.test-card__desc {
+  margin: 0;
+}
